@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repository Moved</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+  <script>
+    const redirectURL = "https://mcpie87.github.io/WaveTools";
+    const delay = 5; // seconds
+    setTimeout(() => { window.location.href = redirectURL; }, delay * 1000);
+  </script>
+</head>
+
+<body>
+  <div>
+    <h1>The repository name has changed to WaveTools:</h1>
+    <p><a href="https://mcpie87.github.io/WaveTools/" style="color: #00aaff;">https://mcpie87.github.io/WaveTools/</a></p>
+    <p>The page will redirect there in <span id="countdown">5</span> seconds.</p>
+  </div>
+  <script>
+    let countdown = delay;
+    const countdownElement = document.getElementById("countdown");
+    setInterval(() => {
+      countdown--;
+      if (countdownElement) countdownElement.textContent = countdown;
+    }, 1000);
+  </script>
+</body>
+
+</html>
